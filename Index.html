@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Bem</title>
+</head>
+<body>
+
+    <div class="log">
+        <button class="bt">log in</button>
+        <button class="bt">sign up</button>
+    </div>
+
+    
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">menu</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">first</a>
+          <a href="#">second</a>
+          <a href="#">third</a>
+        </div>
+      </div>
+      
+      <script>
+     
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+
+<form method="GET" action="https://www.google.com">  
+
+    <nav class="menu">
+
+        <h1 class="menu__title">Title</h1>
+
+        <p class="menu__dtext">something long text</p>
+          
+        <input class="menu__search" type="search" placeholder="search" required>  
+
+          <button><img class="menu__sm" src="./Images/search.png"></button>
+
+        <ul class="menu__list">
+        <li class="menu__item"><a class="menu__link menu__link-active" href="">trev</a></li>
+    
+    
+        <li class="menu__item"><a class="menu__link" href="">rise</a></li>
+    
+    
+        <li class="menu__item"><a class="menu__link" href="">lest</a></li>
+
+        <li class="menu__item"><a class="menu__link" href="">sup</a></li>
+
+        <li class="menu__item"><a class="menu__link" href="">yep</a></li>
+
+        <li class="menu__item"><a class="menu__link" href="">smth</a></li>
+
+        <li class="menu__item"><a class="menu__link" href="">best</a></li>
+
+        <li class="menu__item"><a class="menu__link" href="">gymnas</a></li>
+    
+       
+
+    </ul>
+         
+</nav>
+ 
+</form>
+
+</body>
+</html>
